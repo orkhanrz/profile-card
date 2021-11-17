@@ -1,5 +1,15 @@
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedin,
+  faFacebookSquare,
+  faInstagram,
+  faGithub,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+
 export default function Card() {
   return (
     <div className="card">
@@ -14,10 +24,16 @@ export default function Card() {
           <h1 className="name">Laura Smith</h1>
           <h2 className="profession">Frontend Developer</h2>
           <h3 className="website">laurasmith.website</h3>
-          <button className="email-btn btn">Email</button>
-          <button className="linkedin-btn btn">LinkedIn</button>
+          <button className="email-btn btn">
+            <FontAwesomeIcon icon={faEnvelope} className="icon" />
+            Email
+          </button>
+          <button className="linkedin-btn btn">
+            <FontAwesomeIcon icon={faLinkedin} className="icon" />
+            LinkedIn
+          </button>
         </div>
-
+        <i class="fab fa-twitter"></i>
         <div className="info-about">
           <h1 className="about_header">About</h1>
           <p className="about_paragraph">
@@ -35,10 +51,10 @@ export default function Card() {
       </main>
 
       <footer>
-        <div>icon</div>
-        <div>icon</div>
-        <div>icon</div>
-        <div>icon</div>
+        <FontAwesomeIcon icon={faTwitter} className="footer_icon" />
+        <FontAwesomeIcon icon={faFacebookSquare} className="footer_icon" />
+        <FontAwesomeIcon icon={faInstagram} className="footer_icon" />
+        <FontAwesomeIcon icon={faGithub} className="footer_icon" />
       </footer>
     </div>
   );

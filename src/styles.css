@@ -24,6 +24,7 @@ body {
 }
 
 .container {
+  padding: 4em;
   background-color: #23252c;
   width: 34.375rem;
 }
@@ -31,7 +32,10 @@ body {
 .card {
   width: 20rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   background: #1a1b21;
+  border-radius: 10px;
 }
 
 .info {
@@ -69,6 +73,11 @@ body {
   margin-block: 1em 2em;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 0.5em;
 }
 
 .email-btn {
@@ -76,10 +85,26 @@ body {
   color: #374151;
 }
 
+.email-btn:focus,
+.email-btn:hover {
+  background: #374151;
+  color: #dcdcdc;
+  outline: #dcdcdc 2px solid;
+  outline-offset: -2px;
+}
+
 .linkedin-btn {
   background-color: #5093e2;
   color: white;
   margin-left: 0.5em;
+}
+
+.linkedin-btn:focus,
+.linkedin-btn:hover {
+  background-color: white;
+  color: #5093e2;
+  outline: #5093e2 2px solid;
+  outline-offset: -2px;
 }
 
 .about_header {
@@ -98,7 +123,25 @@ body {
 }
 
 footer {
+  padding: 1em;
   background-color: #161619;
   display: flex;
+  align-items: center;
   justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.footer_icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.footer_icon + .footer_icon {
+  margin-left: 1.25em;
+}
+
+.footer_icon:hover,
+.footer_icon:focus {
+  color: #f3bf99;
 }
