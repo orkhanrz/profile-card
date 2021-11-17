@@ -33,7 +33,7 @@ export default function Card() {
             LinkedIn
           </button>
         </div>
-        <i class="fab fa-twitter"></i>
+        
         <div className="info-about">
           <h1 className="about_header">About</h1>
           <p className="about_paragraph">
