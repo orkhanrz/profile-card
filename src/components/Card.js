@@ -10,9 +10,7 @@ export default function Card() {
         src="../../images/profile.png"
         alt="profile picture"
       />
-
       <MainContent />
-
       <Footer />
     </div>
   );
